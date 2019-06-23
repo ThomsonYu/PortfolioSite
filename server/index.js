@@ -7,9 +7,6 @@ const bodyParser = require('body-parser'); // middleware for parsing HTTP body f
 const port = process.env.PORT || 3000;
 const path = require('path');
 
-// Mongo DB
-const { ObjectID } = require('mongodb');
-
 // Express setup
 const app = express();
 // body-parser middleware setup.  Will parse the JSON and convert to object
