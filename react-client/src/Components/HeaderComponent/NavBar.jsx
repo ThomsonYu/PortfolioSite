@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import NavBarItem from './NavBarItem';
 
 function NavBar() {
   return (
@@ -16,18 +17,10 @@ function NavBar() {
         {/*Navbar buttons*/}
         <div className='collapse navbar-collapse' id='collapsibleNavbar'>
           <ul className='navbar-nav ml-auto' id='navList'>
-          <li className="nav-item btn">
-            <a className="nav-link" href="/">Home</a>
-          </li>
-          <li className="nav-item btn">
-            <a className="nav-link" href="/">About</a>
-          </li>
-          <li className="nav-item btn">
-            <a className="nav-link" href="/">Projects</a>
-          </li>
-          <li className="nav-item btn">
-            <a className="nav-link" href="/">Resume/CV</a>
-          </li>
+            <NavBarItem name="Home" link="/"/>
+            <NavBarItem name="About" link="/"/>
+            <NavBarItem name="Projects" link="/"/>
+            <NavBarItem name="Resume/CV" link="/"/>
           </ul>
         </div>
       </nav>
