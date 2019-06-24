@@ -1,4 +1,4 @@
-import React, { Component } from 'react'; // Allows us to use JSX html in our javascript code
+import React from 'react'; // Allows us to use JSX html in our javascript code
 import ReactDOM from 'react-dom'; // Allows us to render elements
 import App from './Components/App';
 
