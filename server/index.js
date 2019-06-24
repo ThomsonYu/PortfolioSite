@@ -17,11 +17,28 @@ app.use(bodyParser.urlencoded({ extended:true }))
 // Directory
 app.use(express.static(`${__dirname}/../react-client/dist`));
 
+// route for root; redirect to index
+app.get('/', (req, res) => {
+    res.redirect('index')
+});
+
 // Route for index
 app.route('/index')
     .get((req, res) => {
         res.sendFile(path.resolve(`${__dirname}/../react-client/dist/index.html`));
     });
+
+app.get('/about', (req, res) => {
+
+})
+
+app.get('/projects', (req, res) => {
+
+})
+
+app.get('/resume', (req, res) => {
+
+})
 
 app.listen(port, () => {
     log(`Listening on port ${port}...`)
