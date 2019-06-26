@@ -7,7 +7,7 @@ $(document).on('click','.nav-link', function(event) {
   console.log(event.target)
   var target = "#" + this.getAttribute('data-target');
   $('html, body').animate({
-      scrollTop: $(target).offset().top
+      scrollTop: $(target).offset().top-100
   }, 2000);
 });
 
@@ -37,7 +37,7 @@ class NavBar extends Component{
             <ul className='navbar-nav ml-auto' id='navList'>
               <NavBarItem name="Home" link="#" dataTarget="homeSection"/>
               <NavBarItem name="About" link="#" dataTarget="aboutSection"/>
-              <NavBarItem name="Projects" link="#" dataTarget="projects"/>
+              <NavBarItem name="Projects" link="#" dataTarget="projectSection"/>
               <NavBarItem name="Resume/CV" link="#" dataTarget="resume"/>
             </ul>
           </div>

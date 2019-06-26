@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import HomePageIcon from './HomePageIcon';
 import About from './About';
+import Project from './Projects';
 
 class HomePage extends Component{
   render(){
@@ -28,6 +29,7 @@ class HomePage extends Component{
 
         </div>
         <About />
+        <Project />
       </div>
     )
   }

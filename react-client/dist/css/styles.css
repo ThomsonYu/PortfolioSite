@@ -38,14 +38,18 @@ body {
   margin-left: 10px;
 }
 
-#aboutSection{
+.section{
   margin-top:50px;
-  margin-bottom: 30px;
+  margin-bottom: 150px;
   position: relative;
 }
 
 .aboutImg{
   width: 100%;
+}
+
+.text-col{
+  margin:auto;
 }
 
 .footer{
