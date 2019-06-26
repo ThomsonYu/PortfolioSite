@@ -4,7 +4,11 @@ import ProjectItem from './ProjectItem';
 function Project(){
     return(
         <div id="projectSection" className="container section">
-            <div data-aos="fade-down" data-aos-duration="1500">
+            <div 
+                data-aos="fade-down" 
+                data-aos-duration="1500" 
+                data-aos-anchor-placement="top-center"
+            >
                 <h1 className="text-center">Projects</h1>
                 <br/>
                 <ProjectItem

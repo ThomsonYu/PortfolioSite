@@ -3,7 +3,7 @@ import React from 'react';
 function Resume(){
     return(
         <div id="resumeSection" className="container section">
-            <div data-aos="fade-up" data-aos-duration="1500">
+            <div data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="top-center">
                 <h1 className="text-center">Let's Connect!</h1>
                 <br/>
                 <div className="row">
