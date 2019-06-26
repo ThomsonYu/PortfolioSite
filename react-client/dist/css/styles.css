@@ -1,5 +1,5 @@
 body {
-  padding-top: 70px;
+  padding-top: 50px;
   padding-bottom: 70px;
   margin: 0;
 }
@@ -12,7 +12,7 @@ body {
 
 .profileIcon{
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   border-radius: 50%;
 }
 
@@ -36,6 +36,16 @@ body {
 
 .btn{
   margin-left: 10px;
+}
+
+#aboutSection{
+  margin-top:50px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.aboutImg{
+  width: 100%;
 }
 
 .footer{

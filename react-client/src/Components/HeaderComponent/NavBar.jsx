@@ -2,6 +2,15 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import NavBarItem from './NavBarItem';
 
+$(document).on('click','.nav-link', function(event) {
+  event.preventDefault();
+  console.log(event.target)
+  var target = "#" + this.getAttribute('data-target');
+  $('html, body').animate({
+      scrollTop: $(target).offset().top
+  }, 2000);
+});
+
 class NavBar extends Component{
   render(){
     return(
@@ -26,10 +35,10 @@ class NavBar extends Component{
           {/*Navbar buttons*/}
           <div className='collapse navbar-collapse' id='collapsibleNavbar'>
             <ul className='navbar-nav ml-auto' id='navList'>
-              <NavBarItem name="Home" link="/"/>
-              <NavBarItem name="About" link="/"/>
-              <NavBarItem name="Projects" link="/"/>
-              <NavBarItem name="Resume/CV" link="/"/>
+              <NavBarItem name="Home" link="#" dataTarget="homeSection"/>
+              <NavBarItem name="About" link="#" dataTarget="aboutSection"/>
+              <NavBarItem name="Projects" link="#" dataTarget="projects"/>
+              <NavBarItem name="Resume/CV" link="#" dataTarget="resume"/>
             </ul>
           </div>
         </nav>
