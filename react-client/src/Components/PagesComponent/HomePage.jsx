@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import HomePageIcon from './HomePageIcon';
 import About from './About';
 import Project from './Projects';
+import Resume from './Resume';
 
 class HomePage extends Component{
   render(){
@@ -14,9 +15,9 @@ class HomePage extends Component{
           >
           </img>
           <h1>A Brief Introduction</h1>
-          <p>My name is Thomson Yu. I am a software developer and tester from Toronto.</p>
-          <p>Please take a look around my website to view my portfolio.</p>
-          <p>This website is fully responsive and was built with the following tools:</p>
+          <h5>My name is Thomson Yu. I am a software developer and tester from Toronto.</h5>
+          <h5>Please take a look around my website to view my portfolio.</h5>
+          <h5>This website is fully responsive and was built with the following tools:</h5>
 
           <HomePageIcon name="react" img={require("../../img/react.png")}/>
           <HomePageIcon name="react" img={require("../../img/nodejs.png")}/>
@@ -26,10 +27,12 @@ class HomePage extends Component{
 
           <h3>Scroll down to learn more about me!</h3>
           <img className="techIcon" src={require("../../img/chevron.png")}></img>
-
         </div>
+
         <About />
         <Project />
+        <Resume />
+
       </div>
     )
   }

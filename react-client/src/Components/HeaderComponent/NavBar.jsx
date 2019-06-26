@@ -38,7 +38,7 @@ class NavBar extends Component{
               <NavBarItem name="Home" link="#" dataTarget="homeSection"/>
               <NavBarItem name="About" link="#" dataTarget="aboutSection"/>
               <NavBarItem name="Projects" link="#" dataTarget="projectSection"/>
-              <NavBarItem name="Resume/CV" link="#" dataTarget="resume"/>
+              <NavBarItem name="Resume/CV" link="#" dataTarget="resumeSection"/>
             </ul>
           </div>
         </nav>
