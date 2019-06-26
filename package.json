@@ -41,5 +41,7 @@
     "file-loader": "^4.0.0",
     "url-loader": "^2.0.1",
     "webpack-cli": "^3.3.4"
-  }
+  },
+  "postinstall": "webpack",
+  "heroku-postbuild": "webpack -p"
 }
