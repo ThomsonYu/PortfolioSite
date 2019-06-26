@@ -28,18 +28,6 @@ app.route('/index')
         res.sendFile(path.resolve(`${__dirname}/../react-client/dist/index.html`));
     });
 
-app.get('/about', (req, res) => {
-
-})
-
-app.get('/projects', (req, res) => {
-
-})
-
-app.get('/resume', (req, res) => {
-
-})
-
 app.listen(port, () => {
     log(`Listening on port ${port}...`)
 });
