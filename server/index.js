@@ -27,6 +27,10 @@ app.route('/index')
     .get((req, res) => {
         res.sendFile(path.resolve(`${__dirname}/../react-client/dist/index.html`));
     });
+    
+app.get('/resume', (req, res) => {
+    res.sendFile(path.resolve(`${__dirname}/../react-client/dist/files/Thomson Yu - Resume.pdf`));
+});
 
 app.listen(port, () => {
     log(`Listening on port ${port}...`)
