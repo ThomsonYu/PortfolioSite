@@ -24,7 +24,12 @@ module.exports = {
         },
         {
           test: /\.jpg/,
-          loader: 'file-loader'
+          use: {
+            loader: 'file-loader',
+            options: {
+                 name: 'img/[name].[ext]' // check the path
+            }
+          }
         },
         {
           test : /\.jsx?/,

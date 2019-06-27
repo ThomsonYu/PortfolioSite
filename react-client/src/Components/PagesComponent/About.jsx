@@ -1,6 +1,9 @@
 import React from 'react';
+import AboutPhoto from './AboutPhoto';
 
 function About(){
+    const photos = require.context("../../img/photos", false, /.*\.jpg$/).keys();
+
     return(
         <div id="aboutSection" className="container section">
             <div data-aos="fade-down" data-aos-duration="1500" data-aos-anchor-placement="top-center">
@@ -14,7 +17,7 @@ function About(){
                     data-aos-duration="1500"
                     data-aos-anchor-placement="top-center"
                 >
-                    <img className="aboutImg" src={require("../../img/tower.jpg")}></img>
+                   <AboutPhoto length={photos.length}/>
                 </div>
                 <div
                     className="col-sm text-center text-col" 
@@ -27,7 +30,10 @@ function About(){
                         Computer Science.
                     </h4>
                     <br/>
-                    <h4>I love to travel and try new things. I really enjoy food and video games too!</h4>
+                    <h4>
+                        I love to travel, take cool photos, and play video games.
+                        My favorite place in the world is Japan!
+                    </h4>
                     <br/>
                     <h4>
                         I'm always really excited about new technologies. Right now, VR is the thing that
