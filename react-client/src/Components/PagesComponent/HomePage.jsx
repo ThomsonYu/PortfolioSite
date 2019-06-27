@@ -4,6 +4,14 @@ import About from './About';
 import Project from './Projects';
 import Resume from './Resume';
 
+$(document).on('click','.techBtn', function(event) {
+  event.preventDefault();
+  var target = "#" + this.getAttribute('data-target');
+  $('html, body').animate({
+      scrollTop: $(target).offset().top-100
+  }, 2000);
+});
+
 class HomePage extends Component{
   render(){
     return (
@@ -26,7 +34,9 @@ class HomePage extends Component{
           <HomePageIcon name="react" img={require("../../img/heroku.png")}/>
 
           <h3>Scroll down to learn more about me!</h3>
-          <img className="techIcon" src={require("../../img/chevron.png")}></img>
+          <a className="techBtn" href="#" data-target="aboutSection">
+            <img className="techIcon" src={require("../../img/chevron.png")}></img>
+          </a>
         </div>
 
         <About />

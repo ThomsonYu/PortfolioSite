@@ -4,7 +4,6 @@ import NavBarItem from './NavBarItem';
 
 $(document).on('click','.nav-link', function(event) {
   event.preventDefault();
-  console.log(event.target)
   var target = "#" + this.getAttribute('data-target');
   $('html, body').animate({
       scrollTop: $(target).offset().top-100
