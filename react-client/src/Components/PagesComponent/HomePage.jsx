@@ -18,7 +18,7 @@ class HomePage extends Component{
       <div id="homeSection">
         <div className="container text-center">
           <img
-            src="https://media.licdn.com/dms/image/C5603AQHhq5eTOMb2pA/profile-displayphoto-shrink_200_200/0?e=1567036800&v=beta&t=e4xnso320NksmW46IQMEuTOxY9WPlEsIrCp175ff-KQ"
+            src="../../img/profilePic.jpg"
             className="profileIcon"
           >
           </img>
