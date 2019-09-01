@@ -18,7 +18,7 @@ class HomePage extends Component{
       <div id="homeSection">
         <div className="container text-center">
           <img
-            src="../../img/profilePic.jpg"
+            src={require("../../img/profilePic.jpg)")}
             className="profileIcon"
           >
           </img>
