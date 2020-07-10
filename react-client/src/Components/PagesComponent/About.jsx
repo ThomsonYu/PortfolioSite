@@ -26,18 +26,18 @@ function About(){
                     data-aos-anchor-placement="top-center"
                 >
                     <h4>
-                        I just recently graduated from the University of Toronto where I studied Computer
+                        I am a software developer and tester and I am currently a 
+                        Software QA Analyst at Venngage.
+                    </h4>
+                    <br/>
+                    <h4>
+                        I graduated from the University of Toronto where I studied
                         Computer Science.
                     </h4>
                     <br/>
                     <h4>
                         I love to travel, take cool photos, and play video games.
                         My favorite place in the world is Japan!
-                    </h4>
-                    <br/>
-                    <h4>
-                        I'm always really excited about new technologies. Right now, VR is the thing that
-                        interests me the most!
                     </h4>
                 </div>
             </div>
