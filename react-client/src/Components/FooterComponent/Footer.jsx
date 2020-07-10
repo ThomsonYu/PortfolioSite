@@ -23,7 +23,7 @@ class Footer extends Component{
           />
           <FooterItem 
             name="mail" 
-            link="mailto:thomson.yu@mail.utoronto.ca" 
+            link="mailto:thtkl1231@gmail.com" 
             img={require("../../img/email.png")}
           />
         </div>
